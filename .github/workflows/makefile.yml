@@ -12,5 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run check
-      - run: make lint
+      - name: Run linter
+        # Run Linter
+        run: |
+          make lint
