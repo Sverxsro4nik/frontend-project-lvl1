@@ -12,3 +12,5 @@ rules:
     - error
     - ignorePackages
     - js: always
+  allowShortCircuit: 0
+  allowTernary: 0
