@@ -9,3 +9,7 @@
 ### GitHub Actions
 
 [![Makefile CI](https://github.com/Sverxsro4nik/frontend-project-lvl1/actions/workflows/makefile.yml/badge.svg)](https://github.com/Sverxsro4nik/frontend-project-lvl1/actions/workflows/makefile.yml)
+
+### ASCIINEMA RECORD
+
+https://asciinema.org/connect/0607809b-c768-4f22-ad24-9f05ded771f1
