@@ -21,7 +21,7 @@ const checkParity = () => {
   const name = askName();
   explainTask('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
-    const number = randomNum();
+    const number = randomNum(100, 1);
     const answer = askEvenNumber(number);
     if (isEven(number) && answer === 'yes') {
       result += 1;

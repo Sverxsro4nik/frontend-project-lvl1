@@ -7,7 +7,7 @@ import calculator from '../src/calculator.js';
 
 const brainCalculator = () => {
   greeting();
-  askName();
+  const name = askName();
   explainTask('What is the result of the expression?');
   calculator();
 };
