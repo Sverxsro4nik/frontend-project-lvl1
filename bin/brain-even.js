@@ -12,12 +12,14 @@ import askEvenNumber from '../src/askEvenNumber.js';
 import wrongAnswer from '../src/wrongAnswer.js';
 // Приветствие пользователя
 import greeting from '../src/greeting.js';
+// Обьяснение задачи пользователю
+import explainTask from '../src/explainTask.js';
 
 const checkParity = () => {
   let result = 0;
   greeting();
   askName();
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  explainTask('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
     const number = randomNum();
     const answer = askEvenNumber(number);
