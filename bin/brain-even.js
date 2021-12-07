@@ -18,18 +18,21 @@ import explainTask from '../src/explainTask.js';
 const checkParity = () => {
   let result = 0;
   greeting();
-  askName();
+  const name = askName();
   explainTask('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
     const number = randomNum();
     const answer = askEvenNumber(number);
     if (isEven(number) && answer === 'yes') {
       result += 1;
+      console.log('Correct');
     } else if (!isEven(number) && answer === 'no') {
       result += 1;
+      console.log('Correct');
     } else {
       // eslint-disable-next-line no-unused-expressions
       answer === 'yes' ? wrongAnswer(answer) : wrongAnswer(answer);
+      console.log(`Let's try again,${name}`);
       break;
     }
   }
