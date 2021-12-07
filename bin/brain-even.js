@@ -10,10 +10,12 @@ import isEven from '../src/isEven.js';
 import askEvenNumber from '../src/askEvenNumber.js';
 // Обработка неправильного ответа
 import wrongAnswer from '../src/wrongAnswer.js';
+// Приветствие пользователя
+import greeting from '../src/greeting.js';
 
 const checkParity = () => {
   let result = 0;
-  console.log('Welcome to the Brain Games!');
+  greeting();
   askName();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {

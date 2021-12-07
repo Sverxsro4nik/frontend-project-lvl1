@@ -9,3 +9,6 @@ publish:
 
 lint:
 	npx eslint ..
+
+push: lint
+	git push origin main
