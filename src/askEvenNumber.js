@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
 
-const askEvenNumber = (number) => {
-  const userAnswer = readlineSync.question(`Question: ${number}`);
+const askAnswer = (param) => {
+  const userAnswer = readlineSync.question(`Question: ${param}`);
   console.log(`Your answer:\n ${userAnswer}`);
   return userAnswer;
 };
 
-export default askEvenNumber;
+export default askAnswer;
