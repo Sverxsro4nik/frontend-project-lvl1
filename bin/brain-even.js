@@ -7,12 +7,8 @@ import askName from '../src/askName.js';
 import randomNum from '../src/randomNum.js';
 // определяем четность числа
 import isEven from '../src/isEven.js';
-
-const answerEvenNumber = (number) => {
-  const userAnswer = readlineSync.question(`Question: ${number}`);
-  console.log(`Your answer:\n ${userAnswer}`);
-  return userAnswer;
-};
+// Узнаем у пользователя четность переданного числа
+import askEvenNumber from '../src/askEvenNumber.js';
 
 const wrongAnswer = (str) => {
   if (str === 'yes') {
@@ -29,7 +25,7 @@ const checkParity = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
     const number = randomNum();
-    const answer = answerEvenNumber(number);
+    const answer = askEvenNumber(number);
     if (isEven(number) && answer === 'yes') {
       result += 1;
     } else if (!isEven(number) && answer === 'no') {
