@@ -1,10 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
-const answerName = () => {
-  const userName = readlineSync.question('May I have your name?');
-  console.log(`Hello, ${userName}!`);
-};
+import askName from '../src/askName.js';
 
 const randomNum = () => {
   const number = Math.round(Math.random() * 100);
@@ -30,7 +27,7 @@ const wrongAnswer = (str) => {
 const checkParity = () => {
   let result = 0;
   console.log('Welcome to the Brain Games!');
-  answerName();
+  askName();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
     const number = randomNum();
