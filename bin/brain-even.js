@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
 
 // Узнаем имя пользователя
 import askName from '../src/askName.js';
@@ -9,14 +8,8 @@ import randomNum from '../src/randomNum.js';
 import isEven from '../src/isEven.js';
 // Узнаем у пользователя четность переданного числа
 import askEvenNumber from '../src/askEvenNumber.js';
-
-const wrongAnswer = (str) => {
-  if (str === 'yes') {
-    console.log("'yes' is wrong answer ;(. Correct answer was 'no'");
-  } else {
-    console.log("'no' is wrong answer ;(. Correct answer was 'yes'");
-  }
-};
+// Обработка неправильного ответа
+import wrongAnswer from '../src/wrongAnswer.js';
 
 const checkParity = () => {
   let result = 0;
