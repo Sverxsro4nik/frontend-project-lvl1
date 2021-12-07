@@ -31,7 +31,7 @@ const checkParity = () => {
       console.log('Correct');
     } else {
       // eslint-disable-next-line no-unused-expressions
-      answer === 'yes' ? wrongAnswer(answer) : wrongAnswer(answer);
+      answer === 'yes' ? wrongAnswer(answer, 'no') : wrongAnswer(answer, 'yes');
       console.log(`Let's try again,${name}`);
       break;
     }

@@ -1,8 +1,4 @@
-const wrongAnswer = (str) => {
-  if (str === 'yes') {
-    console.log("'yes' is wrong answer ;(. Correct answer was 'no'");
-  } else {
-    console.log("'no' is wrong answer ;(. Correct answer was 'yes'");
-  }
+const wrongAnswer = (answer, correct) => {
+  console.log(`${answer} is wrong answer ;(. Correct answer was ${correct}`);
 };
 export default wrongAnswer;
