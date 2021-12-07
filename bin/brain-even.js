@@ -7,7 +7,7 @@ import randomNum from '../src/randomNum.js';
 // определяем четность числа
 import isEven from '../src/isEven.js';
 // Узнаем у пользователя четность переданного числа
-import askEvenNumber from '../src/askEvenNumber.js';
+import askEvenNumber from '../src/askAnswer.js';
 // Обработка неправильного ответа
 import wrongAnswer from '../src/wrongAnswer.js';
 // Приветствие пользователя
