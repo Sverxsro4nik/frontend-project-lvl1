@@ -2,11 +2,7 @@
 import readlineSync from 'readline-sync';
 
 import askName from '../src/askName.js';
-
-const randomNum = () => {
-  const number = Math.round(Math.random() * 100);
-  return number;
-};
+import randomNum from '../src/randomNum.js';
 
 const isEven = (number) => number % 2 === 0;
 
