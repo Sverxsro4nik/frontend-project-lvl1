@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
+// Узнаем имя пользователя
 import askName from '../src/askName.js';
+// Вычисляем случайное число
 import randomNum from '../src/randomNum.js';
-
-const isEven = (number) => number % 2 === 0;
+// определяем четность числа
+import isEven from '../src/isEven.js';
 
 const answerEvenNumber = (number) => {
   const userAnswer = readlineSync.question(`Question: ${number}`);
