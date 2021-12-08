@@ -26,7 +26,7 @@ const brainCalculator = () => {
       attempt += 1;
     } else {
       wrongAnswer(answer, result);
-      console.log(`Let's try again, ${name}`);
+      console.log(`Let's try again, ${name}!`);
       break;
     }
   }

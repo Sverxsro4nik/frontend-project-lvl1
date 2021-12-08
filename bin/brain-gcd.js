@@ -23,7 +23,7 @@ const brainGcd = () => {
       console.log('Correct');
     } else {
       wrongAnswer(answer, result);
-      console.log(`Let's try again, ${name}`);
+      console.log(`Let's try again, ${name}!`);
       break;
     }
   }
