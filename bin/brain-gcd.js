@@ -6,6 +6,7 @@ import explainTask from '../src/explainTask.js';
 import randomNum from '../src/randomNum.js';
 import askAnswer from '../src/askAnswer.js';
 import wrongAnswer from '../src/wrongAnswer.js';
+import greatestCommonFactor from '../src/greatestCommonFactor.js';
 
 const brainGcd = () => {
   greeting();
@@ -16,12 +17,12 @@ const brainGcd = () => {
     const firstNumber = randomNum(1, 100);
     const secondNumber = randomNum(1, 100);
     const answer = askAnswer(`${firstNumber} ${secondNumber}`);
-    const result = 1;
+    const result = greatestCommonFactor(firstNumber, secondNumber);
     if (answer === result) {
       count += 1;
       console.log('Correct');
     } else {
-      wrongAnswer();
+      wrongAnswer(answer, result);
       console.log(`Let's try again, ${name}`);
       break;
     }
