@@ -37,7 +37,7 @@ const checkParity = () => {
     }
   }
   if (result === 3) {
-    console.log('Correct');
+    console.log(`Congratulations, ${name}!`);
   }
 };
 
