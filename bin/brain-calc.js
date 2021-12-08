@@ -27,6 +27,7 @@ const brainCalculator = () => {
     } else {
       wrongAnswer(answer, result);
       console.log(`Let's try again, ${name}`);
+      break;
     }
   }
   if (attempt === 3) {

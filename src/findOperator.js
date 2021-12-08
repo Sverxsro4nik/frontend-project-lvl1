@@ -2,6 +2,9 @@ import randomNum from './randomNum.js';
 
 export default () => {
   const operator = ['+', '-', '*'];
-  const position = randomNum(0, operator.length - 1);
+  const endOfArr = operator.length - 1;
+  console.log(endOfArr);
+  const position = randomNum(0, endOfArr);
+  console.log(position);
   return operator[position];
 };

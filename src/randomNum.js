@@ -1,5 +1,5 @@
 const randomNum = (min, max) => {
-  const number = Math.round(Math.random() * (max - min + 1) + min);
+  const number = Math.round(Math.random() * (max - min) + min);
   return number;
 };
 
