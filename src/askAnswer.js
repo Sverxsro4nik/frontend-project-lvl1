@@ -7,4 +7,3 @@ const askAnswer = (param) => {
 };
 
 export default askAnswer;
-w;
