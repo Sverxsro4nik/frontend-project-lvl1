@@ -18,7 +18,6 @@ const brainGcd = () => {
     const secondNumber = randomNum(1, 100);
     const answer = askAnswer(`${firstNumber} ${secondNumber}`);
     const result = greatestCommonFactor(firstNumber, secondNumber);
-    console.log(result);
     if (Number(answer) === result) {
       count += 1;
       console.log('Correct');

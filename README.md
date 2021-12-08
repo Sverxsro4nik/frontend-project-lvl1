@@ -12,4 +12,4 @@
 
 ### ASCIINEMA RECORD
 
-https://asciinema.org/connect/0607809b-c768-4f22-ad24-9f05ded771f1
+https://asciinema.org/a/OkKMNYGVnk9GRzi6W6oRGa8tU
