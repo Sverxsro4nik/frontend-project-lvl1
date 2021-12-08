@@ -32,7 +32,7 @@ const checkParity = () => {
     } else {
       // eslint-disable-next-line no-unused-expressions
       answer === 'yes' ? wrongAnswer(answer, 'no') : wrongAnswer(answer, 'yes');
-      console.log(`Let's try again,${name}`);
+      console.log(`Let's try again, ${name}`);
       break;
     }
   }
