@@ -24,7 +24,8 @@ const binPrime = () => {
       attempt += 1;
       console.log('Correct');
     } else {
-      wrongAnswer(answer, result);
+      // eslint-disable-next-line no-unused-expressions
+      answer === 'yes' ? wrongAnswer(answer, 'no') : wrongAnswer(answer, 'yes');
       console.log(`Let's try again, ${name}`);
       break;
     }
