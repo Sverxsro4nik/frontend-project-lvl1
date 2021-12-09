@@ -23,3 +23,9 @@ Node v14.0
 3.  Для запуска игры: - Игра: "Проверка на чётность" brain-even - Игра: "Калькулятор" brain-calc - Игра "НОД" brain-gcd - Игра "Арифметическая прогрессия" brain-progression - Игра "Простое ли число?" brain-prime
 
 ## ASCIINEMA RECORD
+
+https://asciinema.org/a/fkCYXHuadBFbRCzB8jXzYmRfc
+https://asciinema.org/a/fAAIjDTWctvSMzkcz2ABJqkH1
+https://asciinema.org/a/fAAIjDTWctvSMzkcz2ABJqkH1
+https://asciinema.org/a/tbYfT5oQ97uAq7m0M4joOlfQ3
+https://asciinema.org/a/XsuP3ov6qwZCEPvLufKaRwf9W
