@@ -10,14 +10,16 @@
 
 [![Maintainability](https://codeclimate.com/github/Sverxsro4nik/frontend-project-lvl1)](https://codeclimate.com/github/Sverxsro4nik/frontend-project-lvl1)
 
-### ASCIINEMA RECORD
-
-https://asciinema.org/a/OkKMNYGVnk9GRzi6W6oRGa8tU
-
 Реализация нескольких игры, использующих математические формулы для проверки знаний играющего
 
 ## Минимальные требования
 
 Node v14.0
 
-### ASCIINEMA RECORD
+## Установка пакета
+
+1.  Склонировать репозиторий на свой компьютер
+2.  Выполнить в директории проекта команду npm link для установки пакета локально
+3.  Для запуска игры: - Игра: "Проверка на чётность" brain-even - Игра: "Калькулятор" brain-calc - Игра "НОД" brain-gcd - Игра "Арифметическая прогрессия" brain-progression - Игра "Простое ли число?" brain-prime
+
+## ASCIINEMA RECORD
