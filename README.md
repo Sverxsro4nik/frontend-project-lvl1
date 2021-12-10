@@ -8,7 +8,7 @@
 
 ### Maintainability
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f75273a47f96509e4a5d/maintainability)](https://codeclimate.com/github/Sverxsro4nik/frontend-project-lvl1/maintainability)
 
 Реализация нескольких игры, использующих математические формулы для проверки знаний играющего
 
@@ -24,7 +24,7 @@ Node v14.0
 
 ## ASCIINEMA RECORD
 
-asciinema play https://asciinema.org/a/fkCYXHuadBFbRCzB8jXzYmRfc
+https://asciinema.org/a/fkCYXHuadBFbRCzB8jXzYmRfc
 https://asciinema.org/a/fAAIjDTWctvSMzkcz2ABJqkH1
 https://asciinema.org/a/fAAIjDTWctvSMzkcz2ABJqkH1
 https://asciinema.org/a/tbYfT5oQ97uAq7m0M4joOlfQ3
