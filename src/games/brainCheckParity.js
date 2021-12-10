@@ -11,11 +11,11 @@ import wrongAnswer from '../wrongAnswer.js';
 // Обьяснение задачи пользователю
 import explainTask from '../explainTask.js';
 
-const brainCheckParity = () => {
+const brainCheckParity = (numberOfAttempts) => {
   let result = 0;
   const name = askName();
   explainTask('Answer "yes" if the number is even, otherwise answer "no".');
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < numberOfAttempts; i += 1) {
     const number = randomNum(100, 1);
     const answer = askEvenNumber(number);
     if (isEven(number) && answer === 'yes') {

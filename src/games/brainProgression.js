@@ -4,11 +4,11 @@ import createProgression from '../createProgression.js';
 import explainTask from '../explainTask.js';
 import wrongAnswer from '../wrongAnswer.js';
 
-const brainProgression = () => {
+const brainProgression = (numberOfAttempts) => {
   let attempt = 0;
   const name = askName();
   explainTask('What number is missing in the progression?');
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < numberOfAttempts; i += 1) {
     const [result, progression] = createProgression();
     const answer = askAnswer(progression);
     if (Number(answer) === result) {
