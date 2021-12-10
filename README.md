@@ -24,7 +24,7 @@ Node v14.0
 
 ## ASCIINEMA RECORD
 
-[![asciicast](https://asciinema.org/a/kCYXHuadBFbRCzB8jXzYmRfc)](https://asciinema.org/a/fkCYXHuadBFbRCzB8jXzYmRfc)
+[![asciicast](https://asciinema.org/a/fkCYXHuadBFbRCzB8jXzYmRfc)](https://asciinema.org/a/fkCYXHuadBFbRCzB8jXzYmRfc)
 https://asciinema.org/a/fAAIjDTWctvSMzkcz2ABJqkH1
 https://asciinema.org/a/fAAIjDTWctvSMzkcz2ABJqkH1
 https://asciinema.org/a/tbYfT5oQ97uAq7m0M4joOlfQ3
