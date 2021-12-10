@@ -18,10 +18,7 @@ const brainCheckParity = (numberOfAttempts) => {
   for (let i = 0; i < numberOfAttempts; i += 1) {
     const number = randomNum(100, 1);
     const answer = askEvenNumber(number);
-    if (
-      (isEven(number) && answer === 'yes') ||
-      (!isEven(number) && answer === 'no')
-    ) {
+    if (isEven(number) === answer) {
       result += 1;
       console.log('Correct');
     } else {

@@ -14,4 +14,3 @@ rules:
     - js: always
   allowShortCircuit: 0
   allowTernary: 0
-  operator-linebreak: 0
