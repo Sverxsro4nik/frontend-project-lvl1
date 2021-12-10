@@ -1,4 +1,3 @@
-import greeting from '../greeting.js';
 import askName from '../askName.js';
 import explainTask from '../explainTask.js';
 import calculator from '../calculator.js';
@@ -8,7 +7,6 @@ import askAnswer from '../askAnswer.js';
 import wrongAnswer from '../wrongAnswer.js';
 
 const brainCalculator = () => {
-  greeting();
   const name = askName();
   explainTask('What is the result of the expression?');
   let attempt = 0;

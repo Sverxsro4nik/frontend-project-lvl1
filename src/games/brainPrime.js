@@ -1,14 +1,12 @@
 import askAnswer from '../askAnswer.js';
 import askName from '../askName.js';
 import explainTask from '../explainTask.js';
-import greeting from '../greeting.js';
 import randomNum from '../randomNum.js';
 import wrongAnswer from '../wrongAnswer.js';
 import { isPrime } from '../mathematics.js';
 
 const brainPrime = () => {
   let attempt = 0;
-  greeting();
   const name = askName();
   explainTask('Answer "yes" if given number is prime. Otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {

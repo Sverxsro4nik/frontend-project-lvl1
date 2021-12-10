@@ -8,14 +8,11 @@ import isEven from '../isEven.js';
 import askEvenNumber from '../askAnswer.js';
 // Обработка неправильного ответа
 import wrongAnswer from '../wrongAnswer.js';
-// Приветствие пользователя
-import greeting from '../greeting.js';
 // Обьяснение задачи пользователю
 import explainTask from '../explainTask.js';
 
 const brainCheckParity = () => {
   let result = 0;
-  greeting();
   const name = askName();
   explainTask('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
