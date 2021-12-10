@@ -6,11 +6,11 @@ import findOperator from '../findOperator.js';
 import askAnswer from '../askAnswer.js';
 import wrongAnswer from '../wrongAnswer.js';
 
-const brainCalculator = () => {
+const brainCalculator = (numberOfAttempts) => {
   const name = askName();
   explainTask('What is the result of the expression?');
   let attempt = 0;
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < numberOfAttempts; i += 1) {
     const firstNum = randomNum(1, 25);
     const secondNum = randomNum(1, 25);
     const operator = findOperator();
