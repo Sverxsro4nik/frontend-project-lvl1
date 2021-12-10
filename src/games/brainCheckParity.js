@@ -1,17 +1,17 @@
 // Узнаем имя пользователя
-import askName from '../src/askName.js';
+import askName from '../askName.js';
 // Вычисляем случайное число
-import randomNum from '../src/randomNum.js';
+import randomNum from '../randomNum.js';
 // определяем четность числа
-import isEven from '../src/isEven.js';
+import isEven from '../isEven.js';
 // Узнаем у пользователя четность переданного числа
-import askEvenNumber from '../src/askAnswer.js';
+import askEvenNumber from '../askAnswer.js';
 // Обработка неправильного ответа
-import wrongAnswer from '../src/wrongAnswer.js';
+import wrongAnswer from '../wrongAnswer.js';
 // Приветствие пользователя
-import greeting from '../src/greeting.js';
+import greeting from '../greeting.js';
 // Обьяснение задачи пользователю
-import explainTask from '../src/explainTask.js';
+import explainTask from '../explainTask.js';
 
 const brainCheckParity = () => {
   let result = 0;

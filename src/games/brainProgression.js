@@ -1,9 +1,9 @@
-import askAnswer from '../src/askAnswer.js';
-import askName from '../src/askName.js';
-import createProgression from '../src/createProgression.js';
-import explainTask from '../src/explainTask.js';
-import greeting from '../src/greeting.js';
-import wrongAnswer from '../src/wrongAnswer.js';
+import askAnswer from '../askAnswer.js';
+import askName from '../askName.js';
+import createProgression from '../createProgression.js';
+import explainTask from '../explainTask.js';
+import greeting from '../greeting.js';
+import wrongAnswer from '../wrongAnswer.js';
 
 const brainProgression = () => {
   let attempt = 0;

@@ -1,10 +1,10 @@
-import greeting from '../src/greeting.js';
-import askName from '../src/askName.js';
-import explainTask from '../src/explainTask.js';
-import randomNum from '../src/randomNum.js';
-import askAnswer from '../src/askAnswer.js';
-import wrongAnswer from '../src/wrongAnswer.js';
-import greatestCommonFactor from '../src/greatestCommonFactor.js';
+import greeting from '../greeting.js';
+import askName from '../askName.js';
+import explainTask from '../explainTask.js';
+import randomNum from '../randomNum.js';
+import askAnswer from '../askAnswer.js';
+import wrongAnswer from '../wrongAnswer.js';
+import greatestCommonFactor from '../greatestCommonFactor.js';
 
 const brainGcd = () => {
   greeting();

@@ -1,11 +1,11 @@
-import greeting from '../src/greeting.js';
-import askName from '../src/askName.js';
-import explainTask from '../src/explainTask.js';
-import calculator from '../src/calculator.js';
-import randomNum from '../src/randomNum.js';
-import findOperator from '../src/findOperator.js';
-import askAnswer from '../src/askAnswer.js';
-import wrongAnswer from '../src/wrongAnswer.js';
+import greeting from '../greeting.js';
+import askName from '../askName.js';
+import explainTask from '../explainTask.js';
+import calculator from '../calculator.js';
+import randomNum from '../randomNum.js';
+import findOperator from '../findOperator.js';
+import askAnswer from '../askAnswer.js';
+import wrongAnswer from '../wrongAnswer.js';
 
 const brainCalculator = () => {
   greeting();

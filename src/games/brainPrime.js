@@ -1,10 +1,10 @@
-import askAnswer from '../src/askAnswer.js';
-import askName from '../src/askName.js';
-import explainTask from '../src/explainTask.js';
-import greeting from '../src/greeting.js';
-import randomNum from '../src/randomNum.js';
-import wrongAnswer from '../src/wrongAnswer.js';
-import { isPrime } from '../src/mathematics.js';
+import askAnswer from '../askAnswer.js';
+import askName from '../askName.js';
+import explainTask from '../explainTask.js';
+import greeting from '../greeting.js';
+import randomNum from '../randomNum.js';
+import wrongAnswer from '../wrongAnswer.js';
+import { isPrime } from '../mathematics.js';
 
 const brainPrime = () => {
   let attempt = 0;
