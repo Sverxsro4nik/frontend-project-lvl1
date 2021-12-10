@@ -23,8 +23,23 @@ Node v14.0
 3.  Для запуска игры: - Игра: "Проверка на чётность" brain-even - Игра: "Калькулятор" brain-calc - Игра "НОД" brain-gcd - Игра "Арифметическая прогрессия" brain-progression - Игра "Простое ли число?" brain-prime
 
 ## ASCIINEMA RECORD
+
+# brain-progression
+
 [![asciicast](https://asciinema.org/a/XsuP3ov6qwZCEPvLufKaRwf9W.svg)](https://asciinema.org/a/XsuP3ov6qwZCEPvLufKaRwf9W)
-https://asciinema.org/a/fAAIjDTWctvSMzkcz2ABJqkH1
-https://asciinema.org/a/fAAIjDTWctvSMzkcz2ABJqkH1
-https://asciinema.org/a/tbYfT5oQ97uAq7m0M4joOlfQ3
-https://asciinema.org/a/XsuP3ov6qwZCEPvLufKaRwf9W
+
+# brain-prime
+
+[![asciicast](https://asciinema.org/a/tbYfT5oQ97uAq7m0M4joOlfQ3.svg)](https://asciinema.org/a/tbYfT5oQ97uAq7m0M4joOlfQ3)
+
+# brain-gcd
+
+[![asciicast](https://asciinema.org/a/E8ckZ60zCF25pgZCKRqNMzCPi.svg)](https://asciinema.org/a/E8ckZ60zCF25pgZCKRqNMzCPi)
+
+# brain-calc
+
+[![asciicast](https://asciinema.org/a/fAAIjDTWctvSMzkcz2ABJqkH1.svg)](https://asciinema.org/a/fAAIjDTWctvSMzkcz2ABJqkH1)
+
+# brain-even
+
+[![asciicast](https://asciinema.org/a/fkCYXHuadBFbRCzB8jXzYmRfc.svg)](https://asciinema.org/a/fkCYXHuadBFbRCzB8jXzYmRfc)
