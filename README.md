@@ -8,7 +8,7 @@
 
 ### Maintainability
 
-[![Maintainability](https://codeclimate.com/github/Sverxsro4nik/frontend-project-lvl1)](https://codeclimate.com/github/Sverxsro4nik/frontend-project-lvl1)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
 Реализация нескольких игры, использующих математические формулы для проверки знаний играющего
 
