@@ -13,10 +13,7 @@ const brainPrime = (numberOfAttempts) => {
     const number = randomNum(1, 50);
     const answer = askAnswer(number);
     const result = isPrime(number);
-    if (answer === 'yes' && result) {
-      attempt += 1;
-      console.log('Correct');
-    } else if (answer === 'no' && !result) {
+    if ((answer === 'yes' && result) || (answer === 'no' && !result)) {
       attempt += 1;
       console.log('Correct');
     } else {
