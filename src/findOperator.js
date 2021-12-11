@@ -1,4 +1,4 @@
-import randomNum from './randomNum.js';
+import { randomNum } from './mathematics.js';
 
 export default () => {
   const operator = ['+', '-', '*'];
