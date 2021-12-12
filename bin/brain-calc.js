@@ -2,4 +2,4 @@
 
 import brainCalculator from '../src/games/brainCalculator.js';
 
-brainCalculator(3);
+brainCalculator();

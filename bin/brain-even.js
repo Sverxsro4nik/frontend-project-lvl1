@@ -2,4 +2,4 @@
 
 import brainCheckParity from '../src/games/brainCheckParity.js';
 
-brainCheckParity(3);
+brainCheckParity();

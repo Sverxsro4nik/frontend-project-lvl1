@@ -21,7 +21,7 @@ const gameLogic = (
       console.log('Correct');
       attempt += 1;
     } else {
-      wrongAnswer(answer, userAnswer);
+      wrongAnswer(userAnswer, result);
       console.log(`Let's try again, ${userName}!`);
       break;
     }
