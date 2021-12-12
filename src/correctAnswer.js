@@ -1,1 +1,1 @@
-export default (trueValue, answer) => trueValue === Number(answer) || trueValue === answer;
+export default (trueValue, answer) => (trueValue === Number(answer)) || (trueValue === answer);
