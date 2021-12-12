@@ -1,19 +1,25 @@
-const calculator = (firstParam, secondParam, operator) => {
+import findOperator from './findOperator.js';
+import { randomNum } from './mathematics.js';
+
+const calculator = (firstParam, secondParam) => {
+  const firstNum = randomNum(firstParam, secondParam);
+  const secondNum = randomNum(firstParam, secondParam);
   let answer = 0;
+  const operator = findOperator();
   switch (operator) {
     case '+':
-      answer = firstParam + secondParam;
+      answer = firstNum + secondNum;
       break;
     case '-':
-      answer = firstParam - secondParam;
+      answer = firstNum - secondNum;
       break;
     case '*':
-      answer = firstParam * secondParam;
+      answer = firstNum * secondNum;
       break;
     default:
       break;
   }
-  return answer;
+  return [answer, `${firstNum} ${operator} ${secondNum}`];
 };
 
 export default calculator;

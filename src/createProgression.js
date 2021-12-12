@@ -1,16 +1,15 @@
-import randomNum from './randomNum.js';
+import { randomNum } from './mathematics.js';
 
-const createProgression = () => {
-  const step = randomNum(2, 10);
-  const firstNum = randomNum(1, 25);
+const createProgression = (startNum, endNum, stepStart, indexStart) => {
+  const step = randomNum(stepStart, endNum);
+  const firstNum = randomNum(startNum, endNum);
   const progressionArr = [];
-  const randomIndex = randomNum(3, progressionArr.length);
-  console.log(randomIndex);
+  const randomIndex = randomNum(indexStart, progressionArr.length);
   for (let i = firstNum, j = 0; j < 10; j += 1, i += step) {
     progressionArr.push(i);
   }
-  const hiddenNumber = progressionArr[randomIndex];
+  const result = progressionArr[randomIndex];
   progressionArr[randomIndex] = '..';
-  return [hiddenNumber, progressionArr.join(' ')];
+  return [result, progressionArr.join(' ')];
 };
 export default createProgression;
