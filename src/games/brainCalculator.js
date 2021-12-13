@@ -1,4 +1,4 @@
-import gameLogic from '../index.js';
+import { gameLogic } from '../index.js';
 import { randomNum } from '../mathematics.js';
 
 // Получаем произвольный оператор

@@ -1,4 +1,4 @@
-import gameLogic from '../index.js';
+import { gameLogic } from '../index.js';
 import { largestNum, randomNum, smallerNum } from '../mathematics.js';
 
 const greatestCommonFactor = (first, second) => {
