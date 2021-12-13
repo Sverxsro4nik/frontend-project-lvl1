@@ -50,4 +50,4 @@ const gameLogic = (rulesOfTheGame, gameFunction) => {
   userCongratilation(attempt, numberOfAttempts, userName);
 };
 
-export default gameLogic;
+export { askName, gameLogic };
