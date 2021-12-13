@@ -1,8 +1,9 @@
 import readlineSync from 'readline-sync';
+import printMessage from './printMessage.js';
 
 const askAnswer = (param) => {
   const userAnswer = readlineSync.question(`Question: ${param} `);
-  console.log(`Your answer:  ${userAnswer}`);
+  printMessage(`Your answer:  ${userAnswer}`);
   return userAnswer;
 };
 

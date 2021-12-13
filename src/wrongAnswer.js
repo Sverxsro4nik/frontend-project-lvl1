@@ -1,4 +1,6 @@
+import printMessage from './printMessage.js';
+
 const wrongAnswer = (answer, correct) => {
-  console.log(`${answer} is wrong answer ;(. Correct answer was ${correct}`);
+  printMessage(`${answer} is wrong answer ;(. Correct answer was ${correct}`);
 };
 export default wrongAnswer;

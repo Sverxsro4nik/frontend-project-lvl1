@@ -1,6 +1,8 @@
+import printMessage from './printMessage.js';
+
 const userCongratilation = (attempt, numberOfAttempts, userName) => {
   if (attempt === numberOfAttempts) {
-    console.log(`Congratulations, ${userName}!`);
+    printMessage(`Congratulations, ${userName}!`);
   }
 };
 
