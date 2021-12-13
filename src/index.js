@@ -30,7 +30,7 @@ const userCongratilation = (attempt, numberOfAttempts, userName) => {
 
 const gameLogic = (rulesOfTheGame, gameFunction) => {
   const numberOfAttempts = 3;
-  const startNumber = 0;
+  const startNumber = 1;
   const endNumber = 25;
   const userName = askName();
   printMessage(rulesOfTheGame);
