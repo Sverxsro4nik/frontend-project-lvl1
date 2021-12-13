@@ -1,11 +1,11 @@
 import gameLogic from '../index.js';
-import { randomNum, largestNum, smallerNum } from '../mathematics.js';
+import { largestNum, randomNum, smallerNum } from '../mathematics.js';
 
 const greatestCommonFactor = (first, second) => {
-  const firstNumber = randomNum(first, second);
-  const secondNum = randomNum(first, second);
-  const bigger = largestNum(firstNumber, secondNum);
-  const smaller = smallerNum(firstNumber, secondNum);
+  const bigger = largestNum(randomNum(first, second), randomNum(first, second));
+  const smaller = smallerNum(randomNum(first, second), randomNum(first, second));
+  const answer = `${smaller} ${bigger}`;
+  console.log(answer);
   let factor = 1;
   if (bigger % smaller === 0) return smaller;
   for (let i = 1; i <= smaller; i += 1) {
@@ -13,15 +13,13 @@ const greatestCommonFactor = (first, second) => {
       factor = i;
     }
   }
-  return [factor, `${firstNumber} ${secondNum}`];
+  return [factor, answer];
 };
 
 const brainGcd = () => {
   gameLogic(
     'Find the greatest common divisor of given numbers.',
-    3,
     greatestCommonFactor,
-    [1, 25],
   );
 };
 export default brainGcd;
