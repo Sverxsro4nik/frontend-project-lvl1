@@ -1,6 +1,8 @@
 import { gameLogic } from '../index.js';
 import { largestNum, randomNum, smallerNum } from '../mathematics.js';
 
+const rulesOfTheGame = 'Find the greatest common divisor of given numbers.';
+
 const greatestCommonFactor = (first, second) => {
   const bigger = largestNum(randomNum(first, second), randomNum(first, second));
   const smaller = smallerNum(randomNum(first, second), randomNum(first, second));
@@ -17,7 +19,7 @@ const greatestCommonFactor = (first, second) => {
 
 const brainGcd = () => {
   gameLogic(
-    'Find the greatest common divisor of given numbers.',
+    rulesOfTheGame,
     greatestCommonFactor,
   );
 };

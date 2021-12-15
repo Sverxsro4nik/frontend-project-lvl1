@@ -1,6 +1,8 @@
 import { gameLogic } from '../index.js';
 import { randomNum } from '../mathematics.js';
 
+const rulesOfTheGame = 'What is the result of the expression?';
+
 // Получаем произвольный оператор
 const getOperator = () => {
   const operator = ['+', '-', '*'];
@@ -32,7 +34,7 @@ const calculator = (firstParam, secondParam) => {
 };
 
 const brainCalculator = () => {
-  gameLogic('What is the result of the expression?', calculator);
+  gameLogic(rulesOfTheGame, calculator);
 };
 
 export default brainCalculator;

@@ -1,6 +1,8 @@
 import { gameLogic } from '../index.js';
 import { randomNum } from '../mathematics.js';
 
+const rulesOfTheGame = 'What is the result of the expression?';
+
 const createProgression = (startNum, endNum) => {
   const step = randomNum(2, endNum);
   const firstNum = randomNum(startNum, endNum);
@@ -16,7 +18,7 @@ const createProgression = (startNum, endNum) => {
 
 const brainProgression = () => {
   gameLogic(
-    'What is the result of the expression?',
+    rulesOfTheGame,
     createProgression,
   );
 };
