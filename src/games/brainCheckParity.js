@@ -11,7 +11,9 @@ const isEven = (start, end) => {
 
 const checkTheAnswer = (start, end) => {
   const [result, number] = isEven(start, end);
-  if (result) return ['yes', `${number}`];
+  if (result) {
+    return ['yes', `${number}`];
+  }
   return ['no', `${number}`];
 };
 
