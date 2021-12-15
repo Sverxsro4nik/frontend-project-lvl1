@@ -44,7 +44,7 @@ const gameLogic = (rulesOfTheGame, gameFunction) => {
     } else {
       wrongAnswer(userAnswer, result);
       console.log(`Let's try again, ${userName}!`);
-      break;
+      return;
     }
   }
   userCongratilation(attempt, numberOfAttempts, userName);
