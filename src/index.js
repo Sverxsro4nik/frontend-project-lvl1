@@ -1,27 +1,25 @@
 import readlineSync from 'readline-sync';
 
-const printMessage = (str) => console.log(str);
-
 const askName = () => {
-  printMessage('Welcome to the Brain Games!');
+  console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
-  printMessage(`Hello, ${userName}!`);
+  console.log(`Hello, ${userName}!`);
   return userName;
 };
 
 const askAnswer = (param) => {
   const userAnswer = readlineSync.question(`Question: ${param} `);
-  printMessage(`Your answer:  ${userAnswer}`);
+  console.log(`Your answer:  ${userAnswer}`);
   return userAnswer;
 };
 
 const wrongAnswer = (answer, correct) => {
-  printMessage(`${answer} is wrong answer ;(. Correct answer was ${correct}`);
+  console.log(`${answer} is wrong answer ;(. Correct answer was ${correct}`);
 };
 
 const userCongratilation = (attempt, numberOfAttempts, userName) => {
   if (attempt === numberOfAttempts) {
-    printMessage(`Congratulations, ${userName}!`);
+    console.log(`Congratulations, ${userName}!`);
   }
 };
 
@@ -30,7 +28,7 @@ const gameLogic = (rulesOfTheGame, gameFunction) => {
   const startNumber = 1;
   const endNumber = 25;
   const userName = askName();
-  printMessage(rulesOfTheGame);
+  console.log(rulesOfTheGame);
   let attempt = 0;
   for (let i = 0; i < numberOfAttempts; i += 1) {
     const [result, answer] = gameFunction(startNumber, endNumber);
