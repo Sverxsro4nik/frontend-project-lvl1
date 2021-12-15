@@ -14,7 +14,7 @@ const greatestCommonFactor = (first, second) => {
       factor = i;
     }
   }
-  return [factor, answer];
+  return [factor.toString(), answer];
 };
 
 const brainGcd = () => {

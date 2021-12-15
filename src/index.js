@@ -19,9 +19,6 @@ const wrongAnswer = (answer, correct) => {
   printMessage(`${answer} is wrong answer ;(. Correct answer was ${correct}`);
 };
 
-// eslint-disable-next-line max-len
-const correctAnswer = (trueValue, answer) => (trueValue === Number(answer)) || (trueValue === answer);
-
 const userCongratilation = (attempt, numberOfAttempts, userName) => {
   if (attempt === numberOfAttempts) {
     printMessage(`Congratulations, ${userName}!`);
@@ -38,7 +35,7 @@ const gameLogic = (rulesOfTheGame, gameFunction) => {
   for (let i = 0; i < numberOfAttempts; i += 1) {
     const [result, answer] = gameFunction(startNumber, endNumber);
     const userAnswer = askAnswer(answer);
-    if (correctAnswer(result, userAnswer)) {
+    if (answer === userAnswer) {
       console.log('Correct');
       attempt += 1;
     } else {
