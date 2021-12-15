@@ -8,7 +8,7 @@ const createProgression = (startNum, endNum) => {
   const firstNum = randomNum(startNum, endNum);
   const progressionArr = [];
   const randomIndex = randomNum(0, progressionArr.length);
-  const maxNumbersInProgression = 0;
+  const maxNumbersInProgression = 10;
   for (let numInProgression = firstNum, j = 0; j < maxNumbersInProgression; j += 1) {
     progressionArr.push(numInProgression);
     numInProgression += step;
