@@ -1,11 +1,11 @@
 import { gameLogic } from '../index.js';
-import { largestNum, randomNum, smallerNum } from '../mathematics.js';
+import randomNum from '../randomNum.js';
 
 const rulesOfTheGame = 'Find the greatest common divisor of given numbers.';
 
 const greatestCommonFactor = (first, second) => {
-  const bigger = largestNum(randomNum(first, second), randomNum(first, second));
-  const smaller = smallerNum(randomNum(first, second), randomNum(first, second));
+  const bigger = Math.max(randomNum(first, second), randomNum(first, second));
+  const smaller = Math.min(randomNum(first, second), randomNum(first, second));
   const answer = `${smaller} ${bigger}`;
   let factor = 1;
   if (bigger % smaller === 0) return [smaller, answer];

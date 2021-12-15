@@ -1,5 +1,5 @@
 import { gameLogic } from '../index.js';
-import { randomNum } from '../mathematics.js';
+import randomNum from '../randomNum.js';
 
 const rulesOfTheGame = 'What is the result of the expression?';
 

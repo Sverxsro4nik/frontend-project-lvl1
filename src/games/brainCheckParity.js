@@ -1,5 +1,5 @@
 import { gameLogic } from '../index.js';
-import { randomNum } from '../mathematics.js';
+import randomNum from '../randomNum.js';
 
 const rulesOfTheGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
