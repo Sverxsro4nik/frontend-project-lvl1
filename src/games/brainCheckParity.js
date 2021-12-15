@@ -11,10 +11,7 @@ const isEven = (start, end) => {
 
 const checkTheAnswer = (start, end) => {
   const [result, number] = isEven(start, end);
-  if (result) {
-    return ['yes', `${number}`];
-  }
-  return ['no', `${number}`];
+  return result ? ['yes', number] : ['no', number];
 };
 
 const brainCheckParity = () => {

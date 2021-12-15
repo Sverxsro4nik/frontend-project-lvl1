@@ -18,8 +18,7 @@ const isPrime = (firstParam, secondParam) => {
 
 const chectAnswer = (start, end) => {
   const [result, number] = isPrime(start, end);
-  if (result) return ['yes', number];
-  return ['no', number];
+  return result ? ['yes', number] : ['no', number];
 };
 
 const brainPrime = () => {
