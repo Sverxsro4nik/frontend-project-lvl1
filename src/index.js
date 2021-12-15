@@ -35,7 +35,7 @@ const gameLogic = (rulesOfTheGame, gameFunction) => {
   for (let i = 0; i < numberOfAttempts; i += 1) {
     const [result, answer] = gameFunction(startNumber, endNumber);
     const userAnswer = askAnswer(answer);
-    if (answer === userAnswer) {
+    if (result === userAnswer) {
       console.log('Correct');
       attempt += 1;
     } else {
