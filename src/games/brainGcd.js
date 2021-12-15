@@ -8,7 +8,7 @@ const greatestCommonFactor = (first, second) => {
   const smaller = Math.min(randomNum(first, second), randomNum(first, second));
   const answer = `${smaller} ${bigger}`;
   let factor = 1;
-  if (bigger % smaller === 0) return [smaller, answer];
+  if (bigger % smaller === 0) return [smaller.toString(), answer];
   for (let i = 1; i <= smaller; i += 1) {
     if (smaller % i === 0 && bigger % i === 0) {
       factor = i;
