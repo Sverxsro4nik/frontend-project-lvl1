@@ -30,7 +30,7 @@ const calculator = (firstParam, secondParam) => {
     default:
       break;
   }
-  return [answer, `${firstNum} ${operator} ${secondNum}`];
+  return [answer.toString(), `${firstNum} ${operator} ${secondNum}`];
 };
 
 const brainCalculator = () => {
