@@ -35,7 +35,7 @@ const calcResponce = (firstParam, secondParam) => {
   const firstNum = randomNum(firstParam, secondParam);
   const secondNum = randomNum(firstParam, secondParam);
   const [anwser, operator] = calculator(firstNum, secondNum);
-  return [anwser, `${firstNum} ${operator} ${secondNum}`];
+  return [anwser.toString(), `${firstNum} ${operator} ${secondNum}`];
 };
 
 const brainCalculator = () => {
