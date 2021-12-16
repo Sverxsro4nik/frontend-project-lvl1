@@ -13,28 +13,33 @@ const getOperator = () => {
 
 // Выполняем простейшие математические операторы
 const calculator = (firstParam, secondParam) => {
-  const firstNum = randomNum(firstParam, secondParam);
-  const secondNum = randomNum(firstParam, secondParam);
   let answer = 0;
   const operator = getOperator();
   switch (operator) {
     case '+':
-      answer = firstNum + secondNum;
+      answer = firstParam + secondParam;
       break;
     case '-':
-      answer = firstNum - secondNum;
+      answer = firstParam - secondParam;
       break;
     case '*':
-      answer = firstNum * secondNum;
+      answer = firstParam * secondParam;
       break;
     default:
       break;
   }
-  return [answer.toString(), `${firstNum} ${operator} ${secondNum}`];
+  return [answer, operator];
+};
+
+const calcResponce = (firstParam, secondParam) => {
+  const firstNum = randomNum(firstParam, secondParam);
+  const secondNum = randomNum(firstParam, secondParam);
+  const [anwser, operator] = calculator(firstNum, secondNum);
+  return [anwser, `${firstNum} ${operator} ${secondNum}`];
 };
 
 const brainCalculator = () => {
-  gameLogic(rulesOfTheGame, calculator);
+  gameLogic(rulesOfTheGame, calcResponce);
 };
 
 export default brainCalculator;
