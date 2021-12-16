@@ -4,26 +4,26 @@ import randomNum from '../randomNum.js';
 const rulesOfTheGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 // Проверка числа на простоту
-const isPrime = (firstParam, secondParam) => {
-  const needNum = randomNum(firstParam, secondParam);
-  if (needNum === 2 || needNum === 1) return [true, needNum];
-  for (let i = 2; i < needNum; i += 1) {
-    if (needNum % i === 0) {
-      return [false, needNum];
+const isPrime = (number) => {
+  if (number === 2 || number === 1) return true;
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
+      return false;
     }
   }
-  return [true, needNum];
+  return true;
 };
 
-const chectAnswer = (start, end) => {
-  const [result, number] = isPrime(start, end);
+const formaionOfResponce = (start, end) => {
+  const number = randomNum(start, end);
+  const result = isPrime(number);
   return result ? ['yes', number] : ['no', number];
 };
 
 const brainPrime = () => {
   gameLogic(
     rulesOfTheGame,
-    chectAnswer,
+    formaionOfResponce,
   );
 };
 

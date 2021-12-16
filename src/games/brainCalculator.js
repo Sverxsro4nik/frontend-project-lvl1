@@ -31,7 +31,8 @@ const calculator = (firstParam, secondParam) => {
   return [answer, operator];
 };
 
-const calcResponce = (firstParam, secondParam) => {
+// Формируем ответ
+const formaionOfResponce = (firstParam, secondParam) => {
   const firstNum = randomNum(firstParam, secondParam);
   const secondNum = randomNum(firstParam, secondParam);
   const [anwser, operator] = calculator(firstNum, secondNum);
@@ -39,7 +40,7 @@ const calcResponce = (firstParam, secondParam) => {
 };
 
 const brainCalculator = () => {
-  gameLogic(rulesOfTheGame, calcResponce);
+  gameLogic(rulesOfTheGame, formaionOfResponce);
 };
 
 export default brainCalculator;
