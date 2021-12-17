@@ -14,8 +14,10 @@ const isPrime = (number) => {
   return true;
 };
 
-const formaionOfResponce = (start, end) => {
-  const number = randomNum(start, end);
+const formaionOfResponce = () => {
+  const minValue = 1;
+  const maxValue = 25;
+  const number = randomNum(minValue, maxValue);
   const result = isPrime(number);
   return result ? ['yes', number] : ['no', number];
 };

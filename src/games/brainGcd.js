@@ -14,9 +14,11 @@ const greatestCommonFactor = (smaller, bigger) => {
   return factor;
 };
 
-const formaionOfResponce = (startNum, endNum) => {
-  const bigger = Math.max(randomNum(startNum, endNum), randomNum(startNum, endNum));
-  const smaller = Math.min(randomNum(startNum, endNum), randomNum(startNum, endNum));
+const formaionOfResponce = () => {
+  const minValue = 1;
+  const maxValue = 25;
+  const bigger = Math.max(randomNum(minValue, maxValue), randomNum(minValue, maxValue));
+  const smaller = Math.min(randomNum(minValue, maxValue), randomNum(minValue, maxValue));
   const answer = `${smaller} ${bigger}`;
   const factor = greatestCommonFactor(smaller, bigger);
   return [factor.toString(), answer];

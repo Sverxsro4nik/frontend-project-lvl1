@@ -25,13 +25,11 @@ const userCongratilation = (attempt, numberOfAttempts, userName) => {
 
 const gameLogic = (rulesOfTheGame, gameFunction) => {
   const numberOfAttempts = 3;
-  const startNumber = 1;
-  const endNumber = 25;
   const userName = askName();
   console.log(rulesOfTheGame);
   let attempt = 0;
   for (let i = 0; i < numberOfAttempts; i += 1) {
-    const [result, answer] = gameFunction(startNumber, endNumber);
+    const [result, answer] = gameFunction();
     const userAnswer = askAnswer(answer);
     if (result === userAnswer) {
       console.log('Correct');

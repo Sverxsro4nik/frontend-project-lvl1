@@ -31,9 +31,11 @@ const calculator = (firstParam, secondParam, operator) => {
 };
 
 // Формируем ответ
-const formaionOfResponce = (firstParam, secondParam) => {
-  const firstNum = randomNum(firstParam, secondParam);
-  const secondNum = randomNum(firstParam, secondParam);
+const formaionOfResponce = () => {
+  const minValue = 1;
+  const maxValue = 25;
+  const firstNum = randomNum(minValue, maxValue);
+  const secondNum = randomNum(minValue, maxValue);
   const operator = getOperator();
   const answer = calculator(firstNum, secondNum, operator);
   return [answer.toString(), `${firstNum} ${operator} ${secondNum}`];

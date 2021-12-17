@@ -15,9 +15,11 @@ const createProgression = (step, firstNum, maxNumbersInProgression) => {
   return [result, progressionArr];
 };
 
-const formaionOfResponce = (start, end) => {
-  const step = randomNum(2, end);
-  const firstNum = randomNum(start, end);
+const formaionOfResponce = () => {
+  const minValue = 1;
+  const maxValue = 25;
+  const step = randomNum(2, maxValue);
+  const firstNum = randomNum(minValue, maxValue);
   const maxNumbersInProgression = 10;
   const [result, progressionArr] = createProgression(step, firstNum, maxNumbersInProgression);
   return [result.toString(), progressionArr.join(' ')];
