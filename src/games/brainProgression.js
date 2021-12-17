@@ -1,4 +1,4 @@
-import gameLogic from '../index.js';
+import launchesGame from '../index.js';
 import randomNum from '../randomNum.js';
 
 const rulesOfTheGame = 'What is the result of the expression?';
@@ -26,7 +26,7 @@ const formaionOfResponce = () => {
 };
 
 const brainProgression = () => {
-  gameLogic(
+  launchesGame(
     rulesOfTheGame,
     formaionOfResponce,
   );

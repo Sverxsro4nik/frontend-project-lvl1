@@ -1,4 +1,4 @@
-import gameLogic from '../index.js';
+import launchesGame from '../index.js';
 import randomNum from '../randomNum.js';
 
 const rulesOfTheGame = 'Find the greatest common divisor of given numbers.';
@@ -25,7 +25,7 @@ const formaionOfResponce = () => {
 };
 
 const brainGcd = () => {
-  gameLogic(
+  launchesGame(
     rulesOfTheGame,
     formaionOfResponce,
   );

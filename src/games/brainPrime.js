@@ -1,4 +1,4 @@
-import gameLogic from '../index.js';
+import launchesGame from '../index.js';
 import randomNum from '../randomNum.js';
 
 const rulesOfTheGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -22,7 +22,7 @@ const formaionOfResponce = () => {
 };
 
 const brainPrime = () => {
-  gameLogic(
+  launchesGame(
     rulesOfTheGame,
     formaionOfResponce,
   );
