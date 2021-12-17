@@ -10,8 +10,7 @@ const formaionOfResponce = () => {
   const minValue = 1;
   const maxValue = 25;
   const number = randomNum(minValue, maxValue);
-  const result = isEven(number);
-  return result ? ['yes', number] : ['no', number];
+  return isEven(number) ? ['yes', number] : ['no', number];
 };
 
 const brainCheckParity = () => {
