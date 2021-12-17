@@ -12,9 +12,8 @@ const getOperator = () => {
 };
 
 // Выполняем простейшие математические операторы
-const calculator = (firstParam, secondParam) => {
+const calculator = (firstParam, secondParam, operator) => {
   let answer = 0;
-  const operator = getOperator();
   switch (operator) {
     case '+':
       answer = firstParam + secondParam;
@@ -26,17 +25,18 @@ const calculator = (firstParam, secondParam) => {
       answer = firstParam * secondParam;
       break;
     default:
-      break;
+      throw new Error(`Unknown operator: '${operator}'!`);
   }
-  return [answer, operator];
+  return answer;
 };
 
 // Формируем ответ
 const formaionOfResponce = (firstParam, secondParam) => {
   const firstNum = randomNum(firstParam, secondParam);
   const secondNum = randomNum(firstParam, secondParam);
-  const [anwser, operator] = calculator(firstNum, secondNum);
-  return [anwser.toString(), `${firstNum} ${operator} ${secondNum}`];
+  const operator = getOperator();
+  const answer = calculator(firstNum, secondNum, operator);
+  return [answer.toString(), `${firstNum} ${operator} ${secondNum}`];
 };
 
 const brainCalculator = () => {
