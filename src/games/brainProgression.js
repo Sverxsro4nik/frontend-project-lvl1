@@ -20,10 +20,8 @@ const formaionOfResponce = () => {
   const maxNumbersInProgression = 10;
   const randomIndex = randomNum(3, maxNumbersInProgression - 1);
   const progression = createProgression(step, firstNum, maxNumbersInProgression);
-  console.log(progression);
   const result = progression[randomIndex];
   progression[randomIndex] = '..';
-  console.log(result);
   return [result.toString(), progression.join(' ')];
 };
 
