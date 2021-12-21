@@ -4,15 +4,12 @@ import randomNum from '../randomNum.js';
 const rulesOfTheGame = 'What is the result of the expression?';
 
 const createProgression = (step, firstNum, maxNumbersInProgression) => {
-  const progressionArr = [];
-  const randomIndex = randomNum(3, progressionArr.length);
+  const progression = [];
   for (let numInProgression = firstNum, j = 0; j < maxNumbersInProgression; j += 1) {
-    progressionArr.push(numInProgression);
+    progression.push(numInProgression);
     numInProgression += step;
   }
-  const result = progressionArr[randomIndex];
-  progressionArr[randomIndex] = '..';
-  return [result, progressionArr];
+  return progression;
 };
 
 const formaionOfResponce = () => {
@@ -21,8 +18,13 @@ const formaionOfResponce = () => {
   const step = randomNum(2, maxValue);
   const firstNum = randomNum(minValue, maxValue);
   const maxNumbersInProgression = 10;
-  const [result, progressionArr] = createProgression(step, firstNum, maxNumbersInProgression);
-  return [result.toString(), progressionArr.join(' ')];
+  const randomIndex = randomNum(3, maxNumbersInProgression - 1);
+  const progression = createProgression(step, firstNum, maxNumbersInProgression);
+  console.log(progression);
+  const result = progression[randomIndex];
+  progression[randomIndex] = '..';
+  console.log(result);
+  return [result.toString(), progression.join(' ')];
 };
 
 const brainProgression = () => {
