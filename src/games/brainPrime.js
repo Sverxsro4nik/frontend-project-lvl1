@@ -19,9 +19,9 @@ const formaionOfResponce = () => {
   const minValue = 1;
   const maxValue = 25;
   const number = randomNum(minValue, maxValue);
-  const correctAnswer = 'yes';
-  const wrongAnswer = 'no';
-  return isPrime(number) ? [correctAnswer, number] : [wrongAnswer, number];
+  const answerYes = 'yes';
+  const answerNo = 'no';
+  return isPrime(number) ? [answerYes, number] : [answerNo, number];
 };
 
 const brainPrime = () => {
